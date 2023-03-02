@@ -23,18 +23,12 @@ public class MyActivity extends Activity {
       "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/"
           + "single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90"
           + "&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-//  private static final String SAMPLE_VAST_BBTVCH7_URL = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=https://looxtv.tv&tfcd=0&npa=0&ad_type=audio_video&sz=1x1|400x300|640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-//  private static final String SAMPLE_VAST_BBTVCH7_URL = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=https://looxtv.tv&tfcd=0&npa=0&ad_type=audio_video&sz=1x1|400x300|640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-  private static final String SAMPLE_VAST_BBTVCH7_URL0 = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=https%3A%2F%2Flooxtv.tv&tfcd=0&npa=0&ad_type=audio_video&sz=1x1%7C400x300%7C640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-  private static final String SAMPLE_VAST_BBTVCH7_URL1 = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=https://looxtv.tv&tfcd=0&npa=0&ad_type=audio_video&sz=1x1|400x300|640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-//  private static final String SAMPLE_VAST_BBTVCH7_URL1 = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=https://looxtv.tv&tfcd=0&npa=0&ad_type=audio_video&sz=1x1|400x300|640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=";
-  private static final String SAMPLE_VAST_BBTVCH7_URL2 = "https://servx.andbeyond.media/api/adserver/vast3/?AV_PUBLISHERID=61b72e426cd5dc541c1c8334&AV_CHANNELID=63f755c97e39d93b2b023462&AV_URL=https://looxtv.tv&cb=%%CACHEBUSTER%%&AV_WIDTH=%%WIDTH%%&AV_HEIGHT=%%HEIGHT%%";
   private static final String SAMPLE_VAST_PASS_URL = "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=";
   private static final String SAMPLE_VAST_INLINE_URL = "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%203.0%20Samples/Inline_Linear_Tag-test.xml";
   private static final String SAMPLE_VAST_WRAPPER_URL = "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/VAST_Samples/master/VAST%203.0%20Samples/Wrapper_Tag-test.xml";
 
-//  private static final String AD_TAG_URL = getString(R.string.ad_tag_url);
-//  Uri adTagUri = Uri.parse(getString(R.string.ad_tag_url));
+  private static final String SAMPLE_VAST_ASIA_URL = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21622890900,22612156829/TH_looxtv.net_app_instream_cna&description_url=looxtv.tv/&tfcd=0&npa=0&sz=1x1%7C300x250%7C336x280%7C400x300%7C640x360%7C640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=&vad_type=linear";
+  private static final String SAMPLE_VAST_NEW_URL2 = "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/21708198417,22612156829/Loox.tv_VOD_DT_MWeb_Instream_House_1&description_url=looxtv.tv/&tfcd=0&npa=0&sz=1x1%7C300x250%7C400x300%7C640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=&vad_type=linear";
 
   private StyledPlayerView playerView;
   private ExoPlayer player;
@@ -170,7 +164,7 @@ public class MyActivity extends Activity {
     // SAMPLE_VAST_PASS_URL
 
     Uri contentUri = Uri.parse(SAMPLE_VIDEO_URL);
-    Uri adTagUri = Uri.parse(SAMPLE_VAST_BBTVCH7_URL2);
+    Uri adTagUri = Uri.parse(SAMPLE_VAST_NEW_URL2);
 //    Uri adTagUri = Uri.parse(getString(R.string.ad_tag_url));
     MediaItem mediaItem =
         new MediaItem.Builder()
